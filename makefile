@@ -24,13 +24,15 @@ clean:
 # install dist package
 install-dist:
 	@echo "🔧 Installing dist package..."
-	pipx install --force dist/mcp_sqlite_manager-0.1.0-py3-none-any.whl
+	# find and install the latest version of the package
+	pipx install --force $(shell ls dist/mcp_sqlite_manager-*.whl | tail -1)
 
 # Build and install the package in the current environment
 build-install:
 	@echo "building and installing package..."
 	poetry build
-	pipx install --force dist/mcp_sqlite_manager-0.1.0-py3-none-any.whl
+	# find and install the latest version of the package
+	pipx install --force $(shell ls dist/mcp_sqlite_manager-*.whl | tail -1)
 
 # Publish the package to PyPI
 publish:

@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "mcp-sqlite-manager"
-version = "0.1.0"
+version = "1.0.0"
 description = "An MCP server to interact with SQLite databases"
 authors = ["Jonathan Hoffman <jonathan.hoffman91@gmail.com>"]
 license = "MIT"
