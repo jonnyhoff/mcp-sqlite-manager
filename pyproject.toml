@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "mcp-sqlite-manager"
+version = "0.1.0"
+description = "An MCP server to interact with SQLite databases"
+authors = ["Jonathan Hoffman <jonathan.hoffman91@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/jonnyhoff/mcp-sqlite-manager"
+repository = "https://github.com/jonnyhoff/mcp-sqlite-manager"
+packages = [{ include = "mcp_sqlite_manager" }]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastmcp = "^2.1.1"
+
+[tool.poetry.scripts]
+mcp-sqlite-manager = "mcp_sqlite_manager.__main__:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -171,4 +171,5 @@ poetry.toml
 # LSP config files
 pyrightconfig.json
 
-n
+# Test database
+tests/db.sqlite
